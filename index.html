@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <form action="#" method="post">
+        <div class="avatar">
+            <i class="fas fa-user"></i>
+        </div>
+        <h1>Iniciar Sesión</h1>
+        <div class="input-container">
+            <i class="fas fa-user"></i>
+            <input type="text" id="usuario" name="usuario" placeholder=" " required>
+            <label for="usuario">Usuario</label>
+        </div>
+        
+        <div class="input-container">
+            <i class="fas fa-lock"></i>
+            <input type="password" id="contrasena" name="contrasena" placeholder=" " required>
+            <label for="contrasena">Contraseña</label>
+        </div>
+        
+        <div id="error-message"></div>
+        
+        <button type="submit">Login</button>
+    </form>
+    <div class="chat-icon">
+        <i class="fas fa-comment"></i>
+        <span class="tooltip">chatea conmigo</span>
+    </div>
+    <div id="chat-box" class="chat-box">
+        <div class="chat-header">
+            <span>Chat</span>
+            <button id="close-chat">&times;</button>
+        </div>
+        <div class="chat-body">
+            <p>¡Hola! ¿En qué puedo ayudarte?</p>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chat-input" placeholder="Escribe un mensaje...">
+            <button id="send-chat">Enviar</button>
+            <div id="chat-error"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
